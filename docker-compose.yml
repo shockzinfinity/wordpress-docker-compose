@@ -42,10 +42,10 @@ services:
     container_name: wordpress-nginx
     image: nginx:alpine
     environment:
-      - VIRTUAL_HOST=wordpress.shockz.io
+      - VIRTUAL_HOST=wordpress.your.domain
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=wordpress.shockz.io
-      - LETSCRYPT_EMAIL=shockzinfinity@gmail.com
+      - LETSENCRYPT_HOST=wordpress.your.domain
+      - LETSCRYPT_EMAIL=email@your.domain
     restart: unless-stopped
     volumes:
       - ./wordpress:/var/www/html
