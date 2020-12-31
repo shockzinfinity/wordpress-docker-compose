@@ -14,3 +14,4 @@ $ mv ./.env.sample ./.env
 ```
 
 - nginx reverse proxy + letsencrypt 구성 참고: [nginx reverse proxy containerizing](https://shockzinfinity.github.io/dev-log/nginx.html#nginx-reverse-proxy-containerizing)
+- `docker-compose.yml` 상의 networks 부분은 reverse proxy 가 설정된 네트워크에 포함되어야 동작됨
